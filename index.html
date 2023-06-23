@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body onresize="mudoutamanho()">
+    <header>
+        <h1>Teste de menu responsivo!</h1>
+        <span id="bk" class="material-icons" onclick="clickMenu()">
+            menu
+            </span>
+        <menu id="itens">
+            <ul>
+                <li><a href="#">opção1</a></li>
+                <li><a href="#">opção2</a></li>
+                <li><a href="#">opção3</a></li>
+                <li><a href="#">opção4</a></li>
+                <li><a href="#">opção5</a></li>
+            </ul>
+        </menu>
+    </header>
+    <main>
+        <h2>Conteudo</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit veniam facere quam maiores voluptates dolores, nam distinctio voluptatem. Et, at assumenda! A optio quam veniam beatae sint fugit mollitia ad. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sequi placeat magni eos veritatis eius inventore voluptatem architecto accusantium beatae, vel officiis saepe ratione quisquam ea optio est aliquid ex et! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Necessitatibus possimus blanditiis quasi reiciendis quaerat, nisi aliquam distinctio natus suscipit soluta dicta unde quo voluptates, facilis ex fugiat aperiam ab velit! Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis fuga ea animi nisi voluptatem ullam eius perferendis quae voluptatibus id dolores vel amet illo sapiente, odio alias doloribus quos odit? Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia itaque neque facilis corporis aut similique rerum qui dignissimos excepturi praesentium cum vel molestiae cupiditate repellat magni, esse recusandae adipisci voluptatem.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit veniam facere quam maiores voluptates dolores, nam distinctio voluptatem. Et, at assumenda! A optio quam veniam beatae sint fugit mollitia ad. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sequi placeat magni eos veritatis eius inventore voluptatem architecto accusantium beatae, vel officiis saepe ratione quisquam ea optio est aliquid ex et! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Necessitatibus possimus blanditiis quasi reiciendis quaerat, nisi aliquam distinctio natus suscipit soluta dicta unde quo voluptates, facilis ex fugiat aperiam ab velit! Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis fuga ea animi nisi voluptatem ullam eius perferendis quae voluptatibus id dolores vel amet illo sapiente, odio alias doloribus quos odit? Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia itaque neque facilis corporis aut similique rerum qui dignissimos excepturi praesentium cum vel molestiae cupiditate repellat magni, esse recusandae adipisci voluptatem.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit veniam facere quam maiores voluptates dolores, nam distinctio voluptatem. Et, at assumenda! A optio quam veniam beatae sint fugit mollitia ad. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sequi placeat magni eos veritatis eius inventore voluptatem architecto accusantium beatae, vel officiis saepe ratione quisquam ea optio est aliquid ex et! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Necessitatibus possimus blanditiis quasi reiciendis quaerat, nisi aliquam distinctio natus suscipit soluta dicta unde quo voluptates, facilis ex fugiat aperiam ab velit! Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis fuga ea animi nisi voluptatem ullam eius perferendis quae voluptatibus id dolores vel amet illo sapiente, odio alias doloribus quos odit? Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia itaque neque facilis corporis aut similique rerum qui dignissimos excepturi praesentium cum vel molestiae cupiditate repellat magni, esse recusandae adipisci voluptatem.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit veniam facere quam maiores voluptates dolores, nam distinctio voluptatem. Et, at assumenda! A optio quam veniam beatae sint fugit mollitia ad. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sequi placeat magni eos veritatis eius inventore voluptatem architecto accusantium beatae, vel officiis saepe ratione quisquam ea optio est aliquid ex et! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Necessitatibus possimus blanditiis quasi reiciendis quaerat, nisi aliquam distinctio natus suscipit soluta dicta unde quo voluptates, facilis ex fugiat aperiam ab velit! Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis fuga ea animi nisi voluptatem ullam eius perferendis quae voluptatibus id dolores vel amet illo sapiente, odio alias doloribus quos odit? Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia itaque neque facilis corporis aut similique rerum qui dignissimos excepturi praesentium cum vel molestiae cupiditate repellat magni, esse recusandae adipisci voluptatem.</p>
+    </main>
+    <script>
+        function mudoutamanho(){
+            if (window.innerWidth >= 769){
+                itens.style.display = 'block'
+            }
+            else{
+                itens.style.display = 'none'
+            }
+        }
+
+        function clickMenu(){
+              if (itens.style.display == 'block'){
+                itens.style.display = 'none'
+              }
+              else{
+                itens.style.display = 'block'
+              }
+        }
+    </script>
+</body>
+</html>
