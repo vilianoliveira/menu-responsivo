@@ -18,6 +18,7 @@ header{
     border: 2px solid black;
     border-radius: 10px;
     background-color: gray;
+    overflow: hidden;
 }
 
 ul{
